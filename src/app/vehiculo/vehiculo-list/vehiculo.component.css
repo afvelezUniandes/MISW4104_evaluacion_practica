@@ -1,6 +1,6 @@
 .table-header {
-  background-color: #333a40;
-  color: white;
+  background-color: #333a40 !important;
+  color: white !important;
 }
 
 .table-container {
