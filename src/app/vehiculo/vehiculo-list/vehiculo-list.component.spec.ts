@@ -67,6 +67,14 @@ describe('VehiculoListComponent', () => {
 
     fixture.detectChanges(); // Trigger initial data binding
 
+    // Verificar el encabezado de la tabla
+    const headerCells = fixture.debugElement.queryAll(By.css('thead th'));
+    expect(headerCells.length).toBe(4);
+    expect(headerCells[0].nativeElement.textContent).toContain('#');
+    expect(headerCells[1].nativeElement.textContent).toContain('Marca');
+    expect(headerCells[2].nativeElement.textContent).toContain('Linea');
+    expect(headerCells[3].nativeElement.textContent).toContain('Modelo');
+
     const rows = fixture.debugElement.queryAll(By.css('tbody tr'));
     expect(rows.length).toBe(3);
 
