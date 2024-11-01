@@ -1,11 +1,25 @@
-<p>vehiculo works!</p>
+<img
+  src="assets/images/vehiculo-header.png"
+  class="img-fluid"
+  alt="imagen vehiculo"
+/>
 <div>
-  <h2>Lista de Vehículos</h2>
-  <!-- Aquí puedes agregar más contenido para verificar -->
-  <ul>
-    <li *ngFor="let vehiculo of vehiculos">
-      {{ vehiculo.id }} - {{ vehiculo.marca }} - {{ vehiculo.linea }} -
-      {{ vehiculo.modelo }}
-    </li>
-  </ul>
+  <table class="table table-container">
+    <thead class="table-dark table-header">
+      <tr>
+        <th style="font-weight: bold">#</th>
+        <th>Marca</th>
+        <th>Linea</th>
+        <th>Modelo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let vehiculo of vehiculos">
+        <td style="font-weight: bold">{{ vehiculo.id }}</td>
+        <td>{{ vehiculo.marca }}</td>
+        <td>{{ vehiculo.linea }}</td>
+        <td>{{ vehiculo.modelo }}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
