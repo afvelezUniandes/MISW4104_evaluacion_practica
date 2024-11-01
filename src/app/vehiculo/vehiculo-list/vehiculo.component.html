@@ -1,0 +1,11 @@
+<p>vehiculo works!</p>
+<div>
+  <h2>Lista de Vehículos</h2>
+  <!-- Aquí puedes agregar más contenido para verificar -->
+  <ul>
+    <li *ngFor="let vehiculo of vehiculos">
+      {{ vehiculo.id }} - {{ vehiculo.marca }} - {{ vehiculo.linea }} -
+      {{ vehiculo.modelo }}
+    </li>
+  </ul>
+</div>
