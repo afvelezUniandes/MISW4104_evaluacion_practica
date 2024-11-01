@@ -11,9 +11,7 @@ import { VehiculoModule } from './vehiculo/vehiculo.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, AppRoutingModule, VehiculoModule],
-  providers: [
-    provideHttpClient(withInterceptorsFromDi()), // Nueva configuración
-  ],
+  providers: [provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
