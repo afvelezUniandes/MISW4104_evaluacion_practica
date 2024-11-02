@@ -1,0 +1,10 @@
+.table-header {
+  background-color: #333a40 !important;
+  color: white !important;
+}
+
+.table-container {
+  margin-top: 20px;
+  max-width: 787px;
+  overflow-x: auto;
+}
